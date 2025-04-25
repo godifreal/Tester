@@ -8,7 +8,7 @@
  CloseButton = Instance.new("ImageButton")
 
 -- Parent ScreenGui to the Player's GUI
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Parent = game.Players.Player:WaitForChild("PlayerGui")
 ScreenGui.Name = "CoolLibraryGui"
 ScreenGui.ResetOnSpawn = false
 
@@ -109,7 +109,7 @@ end)
 
 -- Add Rounded Corners (Optional)
  function addUICorner(instance, radius)
-    local UICorner = Instance.new("UICorner")
+     UICorner = Instance.new("UICorner")
     UICorner.CornerRadius = UDim.new(radius, 0)
     UICorner.Parent = instance
 end
